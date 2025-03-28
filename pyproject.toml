@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp_monday_server"
+version = "0.1.0"
+authors = [
+  {name = "Sergio Sáenz Solano", email = "sss@sofias.ai"},
+]
+description = "MCP server for Monday.com integration"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "monday>=2.0.1",
+    "mcp>=0.9.0",
+    "requests>=2.28.1",
+]
+
+[project.scripts]
+mcp_monday_server = "src.server:main"
