@@ -6,7 +6,7 @@ An MCP server for Claude Desktop that provides tools to interact with Monday.com
 
 ```bash
 # Install using UVX
-uvx install mcp-server-monday
+uvx install mcp_monday_server
 ```
 
 ## Claude Desktop Configuration
@@ -18,7 +18,7 @@ Add this MCP server to your Claude Desktop configuration:
   "monday": {
     "command": "uvx",
     "args": [
-      "mcp-server-monday"
+      "mcp_monday_server"
     ],
     "env": {
       "MONDAY_API_KEY": "your-monday-api-key", 
@@ -44,7 +44,7 @@ Add this MCP server to your Claude Desktop configuration:
 pip install -e .
 
 # Run manually
-mcp-server-monday
+mcp_monday_server
 ```
 
 ## Environment Variables
