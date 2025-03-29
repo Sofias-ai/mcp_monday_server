@@ -1,7 +1,8 @@
-# Entorno virtual
+# Virtual environment file
 venv/
-*.pyc
 __pycache__/
+*.egg-info
+*.pyc
 
-# Archivos de configuración sensibles
+# Configuración files
 .env
