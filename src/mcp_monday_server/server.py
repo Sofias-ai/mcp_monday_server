@@ -1,8 +1,8 @@
 import mcp.server.stdio, sys, asyncio
 from mcp.server import NotificationOptions, Server
 from mcp.server.models import InitializationOptions
-from common import monday_client, server, logger
-from tools import register_tools
+from .common import monday_client, server, logger
+from .tools import register_tools
 
 async def main():
     logger.info("Starting Monday MCP server")

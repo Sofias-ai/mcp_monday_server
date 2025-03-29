@@ -1,5 +1,5 @@
 from typing import Dict, Any, Union
-from common import logger, monday_client
+from .common import logger, monday_client
 
 def get_board_schema(board_id: Union[int, str]) -> Dict[str, Any]:
     """

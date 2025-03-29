@@ -1,4 +1,4 @@
-from common import logger, MONDAY_BOARD_ID
+from .common import logger, MONDAY_BOARD_ID
 from mcp import types
 
 # Definir nuestras herramientas

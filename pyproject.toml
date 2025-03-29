@@ -23,6 +23,9 @@ include = [
     "src/mcp_monday_server/*.py",
 ]
 
+[tool.hatch.build]
+packages = ["src/mcp_monday_server"]
+
 [project.scripts]
 mcp_monday_server = "mcp_monday_server:main"
 
