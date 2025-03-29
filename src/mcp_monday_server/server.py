@@ -4,7 +4,7 @@ from mcp.server.models import InitializationOptions
 from .common import monday_client, server, logger
 from .tools import register_tools
 
-async def _run_server():
+async def main():
     logger.info("Starting Monday MCP server")
 
     # Register tools with the server
@@ -28,9 +28,5 @@ async def _run_server():
         logger.error(f"An error occurred: {str(e)}", exc_info=True)
         sys.exit(1)
 
-def main():
-    """Entry point for the application"""
-    asyncio.run(_run_server())
-
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

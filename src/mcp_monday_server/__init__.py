@@ -1,7 +1,11 @@
-# Import only what's needed to make the package usable
-# Don't define functions that already exist in server.py
+import asyncio
 
-# Export the main entry point
-from .server import main
+from . import server
 
-__all__ = ["main"]
+
+def main():
+    """Main entry point for the package."""
+    asyncio.run(server.main())
+
+
+__all__ = ["main", "server"]
