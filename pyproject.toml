@@ -27,7 +27,7 @@ include = [
 packages = ["src/mcp_monday_server"]
 
 [project.scripts]
-mcp_monday_server = "mcp_monday_server:main"
+mcp_monday_server = "mcp_monday_server.server:main"
 
 [project.urls]
 Homepage = "https://github.com/Sofias-ai/mcp_monday_server"
